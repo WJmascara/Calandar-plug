@@ -12,17 +12,24 @@
 	<script type="text/javascript" src="scripts/calandar.plug.js"></script>
 </head>
 <body>
-	<div class="chooseDate">
-		<!-- <div class="calandar" id="calandar"></div> -->
-		<input type="text" class="date" id="result" placeholder="请选择日期">
+	<div class="wrap">
+		<div class="chooseDate" id="d1">
+			<input type="text" class="result" id="result1" placeholder="请选择开始日期">
+		</div>
+		<div class="chooseDate" id="d2">
+			<input type="text" class="result" id="result2" placeholder="请选择结束日期">
+		</div>
+		<a href="javascript:void(0);" class="btn">请输出给定间隔中的周末日期</a>
+		<div class="weekBox"></div>
 	</div>
 </body>
 <script type="text/javascript">
 	$(function(){
-		$('.chooseDate').calandar({
-			StartYear:1935,
-			EndYear:2090,
-			result:"#result"
+		$('.chooseDate').each(function(){
+			$(this).calandar({
+				StartYear:1935,
+				EndYear:2090,
+			})
 		});
 	})
 </script>

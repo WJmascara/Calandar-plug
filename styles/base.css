@@ -2,30 +2,27 @@
 	margin: 0;
 	padding: 0;
 }
+.wrap {
+	margin-top: 40px;
+	text-align: center;
+}
 .chooseDate {
+	display: inline-block;
 	position: relative;
 	width: 206px;
-	margin: 40px auto 0;
 }
-.date {
+.result {
 	padding-left: 6px;
 	width: 200px;
 	line-height: 30px;
 }
-.input-txt {
-	display: block;
-	margin: 20px auto 0;
-	padding-left: 10px;
-	width: 240px;
-	line-height: 32px;
-}
-#calandar {
+.hide {
 	display: none;
 }
 .calandar {
 	position: absolute;
-	left: 220px;
-	top: 0;
+	left: 0;
+	top: 40px;
 	width: 250px;
 	padding: 10px;
 	background: #efefef;
@@ -104,4 +101,38 @@
 	background: #ccc;
 	color: #333;
 	cursor: default;
+}
+.btn {
+	display: inline-block;
+	margin-left: 20px;
+	padding: 0 15px;
+	line-height: 32px;
+	background: #f60;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 14px;
+	text-decoration: none;
+}
+.weekBox {
+	text-align: left;
+	margin: 40px auto 0;
+	padding: 20px;
+	width: 500px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+.weekBox h3 {
+	margin-bottom: 20px;
+	text-align: center;
+}
+.weekBox h3 strong {
+	margin: 0 3px;
+	color: red;
+	font-family: "Tahoma";
+}
+.weekBox .num-lis span {
+	display: inline-block;
+	margin-bottom: 15px;
+	width: 150px;
+	text-align: center;
 }
